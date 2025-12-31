@@ -15,8 +15,9 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-room-alpha-umber.vercel.app/",
+    origin: "https://chat-room-alpha-umber.vercel.app",
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 
@@ -48,6 +49,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(process.env.PORT, () => {
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT, () => {
   console.log("Server running on port 3000");
 });
