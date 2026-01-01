@@ -2,6 +2,8 @@
 
 A real-time chat application built with React, Socket.IO, and MongoDB. Users can join chat rooms, send messages, and see message history - all in real-time with a modern, responsive interface.
 
+🔗 Check out Live here : https://chat-room-alpha-umber.vercel.app/
+
 ## ✨ Features
 
 - 🚀 **Real-time messaging** using Socket.IO
